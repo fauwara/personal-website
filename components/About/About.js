@@ -2,10 +2,10 @@ import Image from 'next/image'
 import styles from './About.module.scss'
 
 export default function About() {
-  let copyURI = () => {
-    console.log('hello')
-    // navigator.clipboard.writeText('the text');
-  }
+  // let copyURI = () => {
+  //   console.log('hello')
+  //   // navigator.clipboard.writeText('the text');
+  // }
   
   return (
     <div className={styles.about}>
@@ -22,7 +22,7 @@ export default function About() {
         <a href='mailto:fawazabid96@gmail.com' target='blank'>mail</a>・
         <a href='https://github.com/fauwara' target='blank'>github</a>・
         <a href='https://twitter.com/Fazxza' target='blank'>twitter</a>・
-        <a href='#' onClick={copyURI()}>discord</a>・
+        {/* <a href='#' onClick={copyURI()}>discord</a>・ */}
         <a href='https://steamcommunity.com/profiles/76561198315461197/' target='blank'>steam</a>
       </p>
     </div>
