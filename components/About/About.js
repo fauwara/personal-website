@@ -13,7 +13,9 @@ export default function About() {
         Hello!<br/>
         I&apos;m Fawaz Abid Hussain.
       </p>
-      <img className="HomeImg" src="/me-doodle.png" alt="me" />
+      {/* <div className='image-container'> */}
+        <Image classname='image' src="/me-doodle.png" alt="me" width={936} height={333} layout='responsive'/>
+      {/* </div> */}
       {/* <Image src="/me.png" alt="Vercel Logo" width={100} height={20} /> */}
       <p>
         just another ordinary student who sits with his laptop trying to build kewl stuff.
