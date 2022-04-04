@@ -11,7 +11,7 @@ export default function About() {
     <div className={styles.about}>
       <p>
         Hello!<br/>
-        I'm Fawaz Abid Hussain.
+        I&apos;m Fawaz Abid Hussain.
       </p>
       <img className="HomeImg" src="/me-doodle.png" alt="me" />
       {/* <Image src="/me.png" alt="Vercel Logo" width={100} height={20} /> */}
