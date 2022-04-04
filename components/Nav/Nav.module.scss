@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.Nav {
+	// padding: 1em;
+	height: 8vh;
+	flex: 1;
+	display: flex;
+	// flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// font-size: 1.5em;
+	
+	div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 900px;
+		width: 100%;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			list-style: none;
+			max-width: 150px;
+			width: 100%;
+			li {
+				text-decoration: none;
+				
+				a {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
