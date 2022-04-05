@@ -14,7 +14,7 @@ export default function About() {
         I&apos;m Fawaz Abid Hussain.
       </p>
       {/* <div className='image-container'> */}
-        <Image classname='image' src="/me-doodle.png" alt="me" width={936} height={333} layout='responsive'/>
+        <Image className='image' src="/me-doodle.png" alt="me" width={936} height={333} layout='responsive'/>
       {/* </div> */}
       {/* <Image src="/me.png" alt="Vercel Logo" width={100} height={20} /> */}
       <p>
