@@ -1,0 +1,64 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  
+  font-family: $ff-montserrat;
+  background-color: $background;
+  color: $text-color;
+
+  // font-size
+  @include respond(xl) {
+    font-size: 1.5em; // 1rem = 10px    10px/16px = 62.5%
+  }
+
+  font-size: 1.4em; // 1rem = 10px    10px/16px = 62.5%
+
+  @include respond(md) {
+    //width < 900?
+    font-size: 1.3em; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(sm) {
+    //width < 600?
+    font-size: 1.2em; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(xs) {
+    //width < 300?
+    font-size: 1em; // 1rem = 8px, 8/16 = 50%
+  }
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+// p {
+//   font-size: 0.9em;
+// }
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+a:hover,
+a:focus,
+a:active{
+  text-decoration: underline;
+  color: $primary;
+}

@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.Projects {
+	margin: 10vh 0px;	
+}
+
+.ProjectCard {
+	margin: 70px 0px;
+	display: flex;
+	
+	.date {
+		font-size: $smallest;
+	}
+
+	.cardHeader {
+		// display: flex;
+		// justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	.cardName {
+		font-weight: 600;
+		color: $primary;
+	}
+
+	.desc {
+		font-size: $small;
+	}
+
+	.cardFooter {
+		margin-top: 20px;
+		font-size: $small;
+	}
+
+	img {
+		width: 20%;
+		margin-right: 25px;
+		// height: 150px;
+		object-fit: cover;
+	}
+
+	@include respond(sm) {
+		flex-direction: column;
+
+		img {
+			width: 100%;
+			height: 150px;
+			margin-bottom: 20px;
+		}
+	}
+
+	@include respond(xs) {
+		flex-direction: column;
+
+		img {
+			width: 100%;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+// .tag {
+// 	border: 1px solid $primary;
+// 	border-radius: 50px;
+// 	font-size: 0.8em;
+// 	padding: 3px 15px;
+// 	margin-right: 10px;
+// 	background-color: $primary;
+// 	color: $background;
+// 	font-weight: 600;
+// 	font-size: $small;
+// }
