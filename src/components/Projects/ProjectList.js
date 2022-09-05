@@ -3,7 +3,7 @@ export const projectList = [
 		'name': 'Music Visualizer',
 		'date': 'July ’22',
 		'image': require('../../assets/projects/music-visualizer.jpg'),
-		'domains': [
+		'domain': [
 			'Computer Graphics',
 			'Audio Processing',
 		],
@@ -20,7 +20,7 @@ export const projectList = [
 		'name': 'Distributor Management System',
 		'date': 'March ’22',
 		'image': require('../../assets/projects/distributor.png'),
-		'domains': [
+		'domain': [
 			'Database',
 			'GUI',
 		],
@@ -36,8 +36,8 @@ export const projectList = [
 	{
 		'name': 'Samurai Candy',
 		'date': ' March ’21',
-		'image': require('../../assets/projects/distributor.png'),
-		'domains': [
+		'image': require('../../assets/projects/samurai-candy.png'),
+		'domain': [
 			'Web Development',
 			'Game Development',
 		],
@@ -54,7 +54,7 @@ export const projectList = [
 		'name': 'Sahyadri All Top',
 		'date': 'June ’20',
 		'image': require('../../assets/projects/distributor.png'),
-		'domains': [
+		'domain': [
 			'Web Development',
 			'Web Scraping',
 		],

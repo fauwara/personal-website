@@ -2,7 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .Projects {
-	margin: 10vh 0px;	
+	margin-bottom: 100px;	
 }
 
 .ProjectCard {
@@ -16,11 +16,17 @@
 	.cardHeader {
 		// display: flex;
 		// justify-content: space-between;
-		margin-bottom: 10px;
-	}
-	.cardName {
-		font-weight: 600;
-		color: $primary;
+		margin-bottom: 7px;
+
+		.cardName {
+			font-weight: 600;
+			color: $primary;
+		}
+		
+		.domains {
+			padding-top: 5px;
+			font-size: $small;
+		}
 	}
 
 	.desc {
@@ -33,10 +39,19 @@
 	}
 
 	img {
-		width: 20%;
+		width: 24%;
 		margin-right: 25px;
+		border-radius: 5px;
 		// height: 150px;
 		object-fit: cover;
+	}
+
+	// .img-desktop {
+	// 	display: block;
+	// }
+
+	.imgMobile {
+		display: none;
 	}
 
 	@include respond(sm) {
@@ -47,29 +62,70 @@
 			height: 150px;
 			margin-bottom: 20px;
 		}
+
+		.imgDesktop {
+			display: none;
+		}
+
+		.imgMobile {
+			display: block;
+			margin: 10px 0px;
+		}
+
+		.domains {
+			padding-top: 0px;
+			// font-size: $small;
+		}
+
+		.ProjectCard{
+			margin: 50px 0px;
+		}
 	}
 
 	@include respond(xs) {
-		flex-direction: column;
+		// flex-direction: column;
 
 		img {
-			width: 100%;
-			height: 100px;
-			margin-bottom: 20px;
+			// width: 100%;
+			height: 80px;
+			// margin-bottom: 20px;
 		}
 	}
 }
 
 
 
-// .tag {
-// 	border: 1px solid $primary;
-// 	border-radius: 50px;
-// 	font-size: 0.8em;
-// 	padding: 3px 15px;
-// 	margin-right: 10px;
-// 	background-color: $primary;
-// 	color: $background;
-// 	font-weight: 600;
-// 	font-size: $small;
-// }
+.tagDomain {
+	border: 1px solid $primary;
+	border-radius: 50px;
+	// font-size: 0.8em;
+	padding: 3px 10px;
+	margin-right: 7.5px;
+	margin-bottom: 6px;
+	background-color: $primary-transparent;
+	// background-color: $primary;
+	// color: $background;
+	color: $text-color;
+	// color: $primary;
+	// font-weight: 600;
+	font-size: $smallest;
+	// box-sizing: ;
+	display: inline-block;
+	
+}
+
+.tagTech {
+	border: 1px solid $text-color;
+	border-radius: 50px;
+	// font-size: 0.8em;
+	padding: 3px 10px;
+	margin-right: 7.5px;
+	// background-color: $primary-transparent;
+	// background-color: $primary;
+	color: $background;
+	color: $text-color;
+	// color: $primary;
+	// font-weight: 600;
+	font-size: $smallest;
+	display: inline-block;
+}

@@ -3,8 +3,11 @@ import './styles/app.module.scss';
 import Banner from './components/Banner/Banner';
 import Nav from './components/Nav/Nav';
 import Container from './components/Container/Container';
-import Landing from './components/Landing/Landing';
-import Projects from './components/Projects/Projects';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,8 +15,16 @@ function App() {
       <Banner />
       <Container>
         <Nav />
-        <Landing />
-        <Projects count={2}/>
+        <Router>
+          <div>
+            <Routes>
+              {/* <Route path='/' exact component={Register} /> */}
+              {/* <Route path='/rules' exact component={Rules} /> */}
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/' element={<Home />} />
+            </Routes>
+          </div>
+        </Router>
       </Container>
     </div>
   );
