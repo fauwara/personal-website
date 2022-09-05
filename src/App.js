@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -15,16 +15,18 @@ function App() {
       <Banner />
       <Container>
         <Nav />
-        <Router>
+        {/* <Router> */}
           <div>
-            <Routes>
-              {/* <Route path='/' exact component={Register} /> */}
-              {/* <Route path='/rules' exact component={Rules} /> */}
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/' element={<Home />} />
-            </Routes>
+            <BrowserRouter>
+              <Routes>
+                {/* <Route path='/' exact component={Register} /> */}
+                {/* <Route path='/rules' exact component={Rules} /> */}
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/' element={<Home />} />
+              </Routes>
+            </BrowserRouter>
           </div>
-        </Router>
+        {/* </Router> */}
       </Container>
     </div>
   );
