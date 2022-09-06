@@ -2,11 +2,15 @@
 @import '../../styles/mixins.scss';
 
 .Projects {
-	margin-bottom: 100px;	
+	margin: 75px 0px;
+
+	h1 {
+		margin-bottom: 30px;
+	}
 }
 
 .ProjectCard {
-	margin: 70px 0px;
+	margin-bottom: 70px;
 	display: flex;
 	
 	.date {
@@ -36,6 +40,7 @@
 	.cardFooter {
 		margin-top: 20px;
 		font-size: $small;
+		// text-decoration: underline;
 	}
 
 	img {
@@ -59,7 +64,7 @@
 
 		img {
 			width: 100%;
-			height: 150px;
+			height: 125px;
 			margin-bottom: 20px;
 		}
 
@@ -99,7 +104,7 @@
 	border: 1px solid $primary;
 	border-radius: 50px;
 	// font-size: 0.8em;
-	padding: 3px 10px;
+	padding: 3px 7px;
 	margin-right: 7.5px;
 	margin-bottom: 6px;
 	background-color: $primary-transparent;
@@ -111,14 +116,13 @@
 	font-size: $smallest;
 	// box-sizing: ;
 	display: inline-block;
-	
 }
 
 .tagTech {
 	border: 1px solid $text-color;
 	border-radius: 50px;
 	// font-size: 0.8em;
-	padding: 3px 10px;
+	padding: 3px 7px;
 	margin-right: 7.5px;
 	// background-color: $primary-transparent;
 	// background-color: $primary;

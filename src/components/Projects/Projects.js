@@ -15,14 +15,14 @@ function ProjectCard({ project }) {
 						{
 							project.domain.map((item, index) => {
 								return (
-									<span className={styles.tagDomain} key={index}>{item}</span>
+									<span className={styles.tagDomain} key={index}>&nbsp;{item}&nbsp;</span>
 								);
 							})
 						}
 						{
 							project.tech.map((item, index) => {
 								return (
-									<span className={styles.tagTech} key={index}>{item}</span>
+									<span className={styles.tagTech} key={index}>&nbsp;{item}&nbsp;</span>
 								);
 							})
 						}

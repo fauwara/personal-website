@@ -11,7 +11,7 @@ export default function About() {
       </p>
       <img className='image' src={hero} alt="me" />
       <p>
-        just another ordinary student who sits with his laptop trying to build kewl stuff.
+        just another ordinary student who sits with his laptop trying to build cool stuff for fun.
       </p>
       <p>
         <a href='mailto:fawazabid96@gmail.com' target='blank'>Mail</a>・
